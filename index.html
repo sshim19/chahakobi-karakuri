@@ -28,19 +28,19 @@
             <button type="button" class="btn-finish" id="btn-finish" hidden disabled aria-disabled="true">仕舞う</button>
           </header>
 
-          <canvas id="game" width="844" height="390" aria-label="プレイ画面。左で歩行のレバーを上下し、右で盆の傾きを整えます"></canvas>
+          <canvas id="game" width="844" height="390" aria-label="プレイ画面。左の親指を下へずらすと進み、上へ戻すと止まります。右の親指は盆の中心に置いて水平に保ちます"></canvas>
 
           <div class="hud" id="play-hud" hidden>
             <p class="hud-time" id="hud-time"></p>
           </div>
 
-          <p class="hint hint-left" id="hint-left" hidden>前へ進む</p>
-          <p class="hint hint-right" id="hint-right" hidden>盆を水平に</p>
+          <p class="hint hint-left" id="hint-left" hidden>下へ進む・上で止まる</p>
+          <p class="hint hint-right" id="hint-right" hidden>中心に置いて水平に</p>
 
           <section class="panel" id="screen-title">
             <h1 tabindex="-1">茶運びからくり</h1>
-            <p class="lead">左の指でからくりの足を歩かせ、右の指で盆を水平に保ち、今日の席へお茶を届けます。</p>
-            <p class="rule">横向きにして、左手で歩行のレバーを上下し、右手で盆の傾きを整えます。速さが安定しているときだけ、足取りが滑らかです。席の前で止まって、お茶を差し出します。歩く速さが変わったり、畳の段差に乗ったりすると、盆は傾きます。同じ日は、だれが遊んでも同じ廊下です。時間が来ると、そこまでの運びで終わります。</p>
+            <p class="lead">左の親指を溝の下へずらすとからくりが進み、上へ戻すと止まります。右の親指は盆の中心に置いて水平に保ち、今日の席へお茶を届けます。</p>
+            <p class="rule">横向きにして、左の親指を縦の溝に沿って動かします。下へずらすほど速く歩き、上へ戻すと止まります。右の親指は丸い盤の中心に置くと盆が水平になり、中心からずらすと盆が傾きます。席の前で止まって、指を進む方向へ少し出してお茶を差し出します。歩く速さが変わったり、畳の段差に乗ったりすると、盆は傾きます。茶碗が倒れたときは、その瞬間に終わります。同じ日は、だれが遊んでも同じ廊下です。時間が来ると、そこまでの運びで終わります。</p>
             <div class="title-path-wrap">
               <p>廊下</p>
               <canvas id="title-path" width="240" height="100" aria-hidden="true"></canvas>

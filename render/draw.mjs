@@ -6,6 +6,7 @@
 import * as constants from "../engine/constants.mjs";
 import { isServePose, pointOnTray, tiltMag } from "../engine/tray.mjs";
 import { drawFx, revealZoom } from "./fx.mjs";
+import { drawMotionGuides } from "./hand-guides.mjs";
 
 export const VIEW_W = constants.VIEW_W ?? 844;
 export const VIEW_H = constants.VIEW_H ?? 390;
@@ -910,6 +911,7 @@ export function drawScene(ctx, state, opts = {}) {
     const rightPos = rightThumbPos(opts.right, state);
     drawThumbGuide(ctx, view, leftPos.x, leftPos.y, leftPos.active, !!state?.hintLeft);
     drawThumbGuide(ctx, view, rightPos.x, rightPos.y, rightPos.active, !!state?.hintRight);
+    drawMotionGuides(ctx, view, state);
   }
 
   // からくりと今の盆・茶碗は指より手前

@@ -212,31 +212,35 @@ body.is-playing,
   margin: 0;
   pointer-events: none;
   z-index: 1;
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   color: #1c2430;
-  opacity: 0.84;
-  text-shadow: 0 1px 0 rgb(243 238 228 / 0.7);
+  opacity: 0.96;
+  text-shadow: none;
+  background: rgb(243 238 228 / 0.94);
+  border: 1px solid rgb(28 36 48 / 0.4);
+  border-radius: 4px;
+  padding: 4px 9px;
 }
 
 .hint-left {
-  left: 6%;
-  top: 47%;
+  left: 2%;
+  top: 30%;
   bottom: auto;
   width: 28%;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   line-height: 1.35;
 }
 
 .hint-right {
   right: 6%;
-  top: 47%;
+  top: 42%;
   bottom: auto;
   width: 28%;
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   line-height: 1.35;
 }
 
